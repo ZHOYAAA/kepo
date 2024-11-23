@@ -1,0 +1,135 @@
+html, body {
+  margin: 0; /* Hilangkan margin default */
+  padding: 0; /* Hilangkan padding default */
+  height: 100%; /* Pastikan seluruh halaman memiliki tinggi 100% */
+  overflow-x: hidden; /* Hindari scroll horizontal */
+  background-color: #0d1117; /* Sesuaikan dengan tema Anda */
+}
+
+.page-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* Pastikan setiap halaman mengisi layar penuh */
+  background-color: #0d1117; /* Sesuaikan dengan tema */
+}
+
+.page {
+  scroll-snap-align: start;
+  height: 100vh; /* Setiap halaman mengisi layar penuh */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Hindari margin putih */
+  box-sizing: border-box; /* Termasuk padding dalam perhitungan ukuran */
+  background-color: #0d1117; /* Sesuaikan dengan tema */
+}
+
+footer {
+  margin-top: auto; /* Pastikan footer berada di bagian bawah */
+  padding: 10px;
+  text-align: center;
+  background-color: #0d1117;
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+/* General Container Styles */
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  color: #b3b3b3; /* Light gray text */
+  background-color: #0d1117; /* Dark theme background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Project Cards */
+.card {
+  background-color: #161b22; /* Slightly lighter dark background */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(77, 186, 135, 0.8); /* Neon green hover effect */
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4dba87; /* Themed green color */
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #4dba87;
+  border: none;
+  color: #0d1117;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #3a9469;
+  color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #e63946; /* Red button for delete */
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #d62839;
+}
+
+/* Modal Styles */
+.modal-content {
+  background-color: #161b22;
+  color: #b3b3b3;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: #4dba87;
+}
+
+.form-control {
+  background-color: #0d1117;
+  color: #ffffff;
+  border: 1px solid #4dba87;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(77, 186, 135, 0.8);
+}
+
+/* Alert for Validation Errors */
+.alert {
+  color: #e63946;
+  background-color: rgba(230, 57, 70, 0.1);
+  border: 1px solid #e63946;
+}
